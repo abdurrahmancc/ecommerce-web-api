@@ -1,6 +1,38 @@
-@Ecommerce_web_api_HostAddress = http://localhost:5090
 
-GET {{Ecommerce_web_api_HostAddress}}/weatherforecast/
-Accept: application/json
+GET http://localhost:5090
 
 ###
+
+GET http://localhost:5090/api/categories
+# GET http://localhost:5090/api/categories?searchValue=apple
+
+
+
+###
+
+POST http://localhost:5090/api/categories
+Content-Type: application/json
+
+{
+    "name":"phone",
+    "description":"Smart phone is a nice category"
+}
+
+
+
+
+###
+
+
+PUT  http://localhost:5090/api/categories/b310326b-e29d-45a1-99f6-00cbed9698e9
+Content-Type: application/json
+
+{
+    "name":"smart phone",
+    "description":"aa"
+}
+
+###
+
+DELETE  http://localhost:5090/api/categories/37f32840-4b86-4339-ae26-1bb75055c139
+
