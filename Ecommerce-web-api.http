@@ -1,21 +1,29 @@
 
-GET http://localhost:5090
+GET http://localhost:5090/v1
 
 ###
 
-GET http://localhost:5090/api/categories
-# GET http://localhost:5090/api/categories?searchValue=apple
+GET http://localhost:5090/v1/api/categories
+# GET http://localhost:5090/v1/api/categories?searchValue=apple
 
 
 
 ###
 
-POST http://localhost:5090/api/categories
+
+
+GET http://localhost:5090/v1/api/categories/ca479a63-7a26-4a89-8ff6-12021af705fa
+
+
+
+###
+
+POST http://localhost:5090/v1/api/categories
 Content-Type: application/json
 
 {
-    "name":"phone",
-    "description":"Smart phone is a nice category"
+    "name" : "smart phone",
+    "description":"gdsgsdgsdgdsgdsgs"
 }
 
 
@@ -24,15 +32,15 @@ Content-Type: application/json
 ###
 
 
-PUT  http://localhost:5090/api/categories/b310326b-e29d-45a1-99f6-00cbed9698e9
+PUT  http://localhost:5090/v1/api/categories/0ddfc992-eefa-4953-aef9-8555d7b57097
 Content-Type: application/json
 
 {
-    "name":"smart phone",
+    "name":"apple phone",
     "description":"aa"
 }
 
 ###
 
-DELETE  http://localhost:5090/api/categories/37f32840-4b86-4339-ae26-1bb75055c139
+DELETE  http://localhost:5090/v1/api/categories/afc82700-42f2-4549-a210-06d019237e26
 
