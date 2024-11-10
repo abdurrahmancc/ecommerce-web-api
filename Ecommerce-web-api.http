@@ -22,8 +22,8 @@ POST http://localhost:5090/v1/api/categories
 Content-Type: application/json
 
 {
-    "name" : "smart phone",
-    "description":"gdsgsdgsdgdsgdsgs"
+    "name" : "",
+    "description" : "gdsgsdgsdgdsgdsgs"
 }
 
 

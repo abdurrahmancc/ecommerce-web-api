@@ -39,7 +39,7 @@ namespace Ecommerce_web_api.Controllers
         public IActionResult GetCategoriesById( Guid id){
             Console.WriteLine("ffff");
             var foundCategory = categories.FirstOrDefault(category=>category.CategoryId == id ); 
-            Console.WriteLine("id" + id);
+
             if(foundCategory == null){
                 return NotFound(ApiResponse<object>.ErrorResponse(new List<string>{"Category with this id does not exist"}, 404, "Validation failed" ));
             }
@@ -93,7 +93,7 @@ namespace Ecommerce_web_api.Controllers
 
         //PUT: /api/categories/{Id} => update a category
         [HttpPut("{Id:Guid}")]
-        public IActionResult UpdateCategoriesById(Guid Id, [FromBody] CategoryUpdateDto category){
+        public IActionResult UpdateCategoriesById(Guid Id,  CategoryUpdateDto category){
 
                 var foundCategory = categories.FirstOrDefault(category=>category.CategoryId == Id); 
                 if(foundCategory == null){
