@@ -12,7 +12,7 @@ GET http://localhost:5090/v1/api/categories
 
 
 
-GET http://localhost:5090/v1/api/categories/ca479a63-7a26-4a89-8ff6-12021af705fa
+GET http://localhost:5090/v1/api/categories/36659935-2402-412d-817c-1a7770a38080
 
 
 
@@ -22,8 +22,8 @@ POST http://localhost:5090/v1/api/categories
 Content-Type: application/json
 
 {
-    "name" : "",
-    "description" : "gdsgsdgsdgdsgdsgs"
+    "name" : "smart phone",
+    "description":"smart phone is the best phone"
 }
 
 
@@ -32,15 +32,15 @@ Content-Type: application/json
 ###
 
 
-PUT  http://localhost:5090/v1/api/categories/0ddfc992-eefa-4953-aef9-8555d7b57097
+PUT  http://localhost:5090/v1/api/categories/b15c6327-587f-4bb9-8d35-e9fba07f899c
 Content-Type: application/json
 
 {
-    "name":"apple phone",
-    "description":"aa"
+    "name":"apple phonedddddd",
+    "description":"aadddddddddddddddddddddddd"
 }
 
 ###
 
-DELETE  http://localhost:5090/v1/api/categories/afc82700-42f2-4549-a210-06d019237e26
+DELETE  http://localhost:5090/v1/api/categories/b15c6327-587f-4bb9-8d35-e9fba07f899c
 
