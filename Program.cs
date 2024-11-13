@@ -1,11 +1,17 @@
 
 using Ecommerce_web_api.Controllers;
+using Ecommerce_web_api.data;
+using Ecommerce_web_api.Interfaces;
 using Ecommerce_web_api.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSingleton<CategoryService>();
+builder.Services.AddScoped<ICategoryServices, CategoryService>();
+builder.Services.AddAutoMapper(typeof (Program));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
 builder.Services.Configure<ApiBehaviorOptions>(Options=>{
