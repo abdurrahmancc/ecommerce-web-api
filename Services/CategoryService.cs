@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Ecommerce_web_api.Controllers;
 using Ecommerce_web_api.data;
 using Ecommerce_web_api.DTOs;
+using Ecommerce_web_api.Enums;
 using Ecommerce_web_api.Interfaces;
 using Ecommerce_web_api.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -24,10 +26,46 @@ namespace Ecommerce_web_api.Services
             _appDbContext = appDbContext;
         }
 
-        public async Task<List<CategoryReadDto>> GetAllCategoriesService()
+        public async Task<PaginatedResult<CategoryReadDto>> GetAllCategoriesService(int pageNumber, int pageSize, string search, string sortOrder)
         {
-            var categories = await _appDbContext.Categories.ToListAsync();
-            return _mapper.Map<List<CategoryReadDto>>(categories);
+            IQueryable<Category> query = _appDbContext.Categories;
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                var formattedSearch = $"%{search.Trim()}%";
+                query = query.Where(C => EF.Functions.ILike(C.Name, formattedSearch) || EF.Functions.ILike(C.Description, formattedSearch));
+            }
+
+            if (!string.IsNullOrWhiteSpace(sortOrder))
+            {
+                var formattedSortOrder = sortOrder.Trim().ToLowerInvariant();
+                if (Enum.TryParse<SortOrder>(formattedSortOrder, true, out var parseFormattedSortOrder))
+                {
+                    query = parseFormattedSortOrder switch
+                    {
+                        SortOrder.name_asc => query.OrderBy(C => C.Name),
+                        SortOrder.name_desc => query.OrderByDescending(C => C.Name),
+                        SortOrder.createdAt_asc => query.OrderBy(C => C.CreateAt),
+                        SortOrder.createdAt_desc => query.OrderByDescending(C => C.CreateAt),
+                        _ => query.OrderBy(C => C.Name)
+                    };
+                }
+
+            }
+
+            var totalCount = await query.CountAsync();
+            var items = await query.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
+
+            var result = _mapper.Map<List<CategoryReadDto>>(items);
+
+            return new PaginatedResult<CategoryReadDto>
+            {
+                Items = result,
+                TotalCount = totalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+            };
+
         }
 
 
@@ -36,8 +74,8 @@ namespace Ecommerce_web_api.Services
             var newCategory = _mapper.Map<Category>(categoryData);
             newCategory.CategoryId = Guid.NewGuid();
             newCategory.CreateAt = DateTime.UtcNow;
-           await _appDbContext.Categories.AddAsync(newCategory);
-           await _appDbContext.SaveChangesAsync();
+            await _appDbContext.Categories.AddAsync(newCategory);
+            await _appDbContext.SaveChangesAsync();
             return _mapper.Map<CategoryReadDto>(newCategory);
         }
 

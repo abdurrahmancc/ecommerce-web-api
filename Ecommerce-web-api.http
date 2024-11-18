@@ -3,7 +3,7 @@ GET http://localhost:5090/v1
 
 ###
 
-GET http://localhost:5090/v1/api/categories
+GET http://localhost:5090/v1/api/categories?pageNumber=2&&pageSize=5
 # GET http://localhost:5090/v1/api/categories?searchValue=apple
 
 

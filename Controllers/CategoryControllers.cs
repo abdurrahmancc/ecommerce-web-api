@@ -26,11 +26,12 @@ namespace Ecommerce_web_api.Controllers
 
         //GET: /api/categories/ => Read categories
         [HttpGet]
-        public async Task<IActionResult> GetCategories()
+        public async Task<IActionResult> GetAllCategories([FromQuery] int pageNumber=1, [FromQuery] int pageSize = 5, [FromQuery] string? search=null, [FromQuery] string? sortOrder=null)
         {
-            var categoryList = await _categoryService.GetAllCategoriesService();
 
-            return Ok(ApiResponse<List<CategoryReadDto>>.SuccessResponse(categoryList, 200, "Categories returned successfully"));
+            var categoryList = await _categoryService.GetAllCategoriesService(pageNumber, pageSize, search, sortOrder);
+
+            return Ok(ApiResponse<PaginatedResult<CategoryReadDto>>.SuccessResponse(categoryList, 200, "Categories returned successfully"));
         }
 
 
