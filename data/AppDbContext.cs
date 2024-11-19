@@ -10,5 +10,6 @@ namespace Ecommerce_web_api.data
         public AppDbContext(DbContextOptions<AppDbContext>options): base(options){}
         public DbSet<Category>Categories{get; set;}
         public DbSet<UserModel>Users{get; set;}
+        public DbSet<Blog>Blogs{get; set;}
     }
 }
