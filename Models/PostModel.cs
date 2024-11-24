@@ -15,7 +15,8 @@ namespace Ecommerce_web_api.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public int BlogId { get; set; }
-        public Blog Blog { get; set; }
+        [JsonIgnore]
+        public Blog? Blog { get; set; }
     }
 
 }

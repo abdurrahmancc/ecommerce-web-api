@@ -9,6 +9,7 @@ using Microsoft.Extensions.Options;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using dotenv.net;
+using Ecommerce_web_api.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ICategoryServices, CategoryService>();
@@ -18,6 +19,7 @@ builder.Services.AddScoped<IFilesUploadService, FilesUploadService>();
 builder.Services.AddAutoMapper(typeof (Program));
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 builder.Services.AddControllers();
 builder.Services.Configure<ApiBehaviorOptions>(Options=>{

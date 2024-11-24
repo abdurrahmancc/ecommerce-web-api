@@ -28,11 +28,14 @@ namespace Ecommerce_web_api.Services
         {
             try
             {
-                Console.WriteLine($"Blog Title: {blogData.Title}, Description: {blogData.Description}");
-                Console.WriteLine("Saving Blog...");
-                await _appDbContext.Blogs.AddAsync(blogData);
+                //Console.WriteLine($"Blog Title: {blogData.Title}, Description: {blogData.Description}");
+                //Console.WriteLine("Saving Blog...");
+                //await _appDbContext.Blogs.AddAsync(blogData);
+                //await _appDbContext.SaveChangesAsync();
+                //Console.WriteLine($"Blog saved successfully with Id: {blogData.Id}");
+                //return blogData;
+                _appDbContext.Blogs.Add(blogData);
                 await _appDbContext.SaveChangesAsync();
-                Console.WriteLine($"Blog saved successfully with Id: {blogData.Id}");
                 return blogData;
             }
             catch (Exception ex)
