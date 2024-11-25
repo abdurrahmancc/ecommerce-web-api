@@ -1,11 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Ecommerce_web_api.data;
 using Ecommerce_web_api.Interfaces;
 using Ecommerce_web_api.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Ecommerce_web_api.Services
 {
@@ -24,16 +22,30 @@ namespace Ecommerce_web_api.Services
         }
 
 
+        public async Task<Blog?> GetBlogByIdService(Guid Id)
+        {
+            return await _appDbContext.Blogs
+                               .Include(b => b.Posts)
+                               .FirstOrDefaultAsync(b => b.Id == Id);
+        }
+
         public async Task<Blog> CreateBlogService(Blog blogData)
         {
             try
             {
-                //Console.WriteLine($"Blog Title: {blogData.Title}, Description: {blogData.Description}");
-                //Console.WriteLine("Saving Blog...");
-                //await _appDbContext.Blogs.AddAsync(blogData);
-                //await _appDbContext.SaveChangesAsync();
-                //Console.WriteLine($"Blog saved successfully with Id: {blogData.Id}");
-                //return blogData;
+                if (blogData.Id == Guid.Empty )
+                {
+                    blogData.Id = Guid.NewGuid();
+                }
+                foreach (var post in blogData.Posts)
+                {
+                    if (post.Id == Guid.Empty)
+                    {
+                        post.Id = Guid.NewGuid();
+                        post.BlogId = blogData.Id;
+                    }
+                }
+
                 _appDbContext.Blogs.Add(blogData);
                 await _appDbContext.SaveChangesAsync();
                 return blogData;
@@ -41,7 +53,29 @@ namespace Ecommerce_web_api.Services
             catch (Exception ex)
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
-                throw;
+                throw new InvalidOperationException("Failed to create the blog", ex);
+            }
+        }
+
+
+        public async Task<int> DeleteBlogService(Guid Id)
+        {
+            try
+            {
+              var result = await _appDbContext.Blogs.FindAsync(Id);
+
+                if (result == null)
+                {
+                    return 404;
+                }
+                _appDbContext.Remove(result);
+                await _appDbContext.SaveChangesAsync();
+                return 202;
+            }
+            catch (Exception ex)
+            {
+               Console.WriteLine($"an error occurred: {ex.Message}");
+                throw new InvalidOperationException("Failed to create the blog", ex);
             }
         }
 

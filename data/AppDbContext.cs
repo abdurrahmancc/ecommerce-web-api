@@ -16,21 +16,14 @@ namespace Ecommerce_web_api.data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Blog>()
-            //.HasMany(e => e.Posts)
-            //.WithOne(e => e.Blog)
-            //.HasForeignKey(e => e.BlogId)
-            //.IsRequired();
-
-            //modelBuilder.Entity<Post>()
-            //.HasOne(e => e.Blog)
-            //.WithMany(e => e.Posts)
-            //.IsRequired();
 
             modelBuilder.Entity<Blog>()
-           .HasMany(c => c.Posts)
-           .WithOne(p => p.Blog)
-           .HasForeignKey(p => p.BlogId);
+                .HasMany(e => e.Posts)
+                .WithOne(e => e.Blog)
+                .HasForeignKey(e => e.BlogId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade);
+
 
             base.OnModelCreating(modelBuilder);
         }

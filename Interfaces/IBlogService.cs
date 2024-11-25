@@ -10,6 +10,8 @@ namespace Ecommerce_web_api.Interfaces
     public interface IBlogService
     {
         Task<Blog> CreateBlogService(Blog blogData);
-        Task<List<Blog>?> GetAllBlogsService();
+        Task<List<Blog>> GetAllBlogsService();
+        Task<Blog?> GetBlogByIdService(Guid Id);
+        Task<int> DeleteBlogService(Guid Id);
     }
 }

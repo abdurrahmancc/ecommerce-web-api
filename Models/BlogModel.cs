@@ -10,14 +10,9 @@ namespace Ecommerce_web_api.Models
 {
     public class Blog
     {
-        public int Id { get; set; }
-
-        [Required]
+        public Guid Id { get; set; }
         public string Title { get; set; }
-
-        [Required]
         public string Description { get; set; }
-
         public ICollection<Post> Posts { get; set; } = new List<Post>();
     }
 

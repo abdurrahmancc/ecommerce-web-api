@@ -11,10 +11,10 @@ namespace Ecommerce_web_api.Models
 {
     public class Post
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public int BlogId { get; set; }
+        public Guid BlogId { get; set; }
         [JsonIgnore]
         public Blog? Blog { get; set; }
     }
