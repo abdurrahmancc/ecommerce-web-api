@@ -1,58 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My-Test-Project\\ecommerce-web-api\\",
+  "WorkspaceRootPath": "F:\\ecommerce-web-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\helper\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:helper\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\ecommerce-web-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:ecommerce-web-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\controllers\\categorycontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:controllers\\categorycontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\dtos\\genericresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:dtos\\genericresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\models\\postmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\models\\postmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:models\\postmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|d:\\my-test-project\\ecommerce-web-api\\models\\blogmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\models\\blogmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:models\\blogmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\controllers\\categorycontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:controllers\\categorycontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\controllers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:controllers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|f:\\ecommerce-web-api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880A276A-C615-4B11-A71C-E1886D683F1B}|Ecommerce-web-api.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,175 +50,140 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Helper\\JwtService.cs",
-              "RelativeDocumentMoniker": "Helper\\JwtService.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Helper\\JwtService.cs",
-              "RelativeToolTip": "Helper\\JwtService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T11:41:50.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-25T11:32:03.453Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFwAAAAAAAAAAAAAAA==",
+              "Title": "GenericResponse.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\DTOs\\GenericResponse.cs",
+              "RelativeDocumentMoniker": "DTOs\\GenericResponse.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\DTOs\\GenericResponse.cs",
+              "RelativeToolTip": "DTOs\\GenericResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T11:31:03.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Ecommerce-web-api",
-              "DocumentMoniker": "D:\\My-Test-Project\\Ecommerce-web-api\\Ecommerce-web-api.csproj",
-              "RelativeDocumentMoniker": "Ecommerce-web-api.csproj",
-              "ToolTip": "D:\\My-Test-Project\\Ecommerce-web-api\\Ecommerce-web-api.csproj",
-              "RelativeToolTip": "Ecommerce-web-api.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-25T10:56:19.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-25T10:56:15.517Z",
+              "WhenOpened": "2024-11-25T18:04:32.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Controllers\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApiResponse.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Controllers\\ApiResponse.cs",
+              "RelativeToolTip": "Controllers\\ApiResponse.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA0wBQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T18:02:27.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Services\\CategoryService.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Services\\CategoryService.cs",
               "RelativeDocumentMoniker": "Services\\CategoryService.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Services\\CategoryService.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Services\\CategoryService.cs",
               "RelativeToolTip": "Services\\CategoryService.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAIwFwAAAAdAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T09:28:14.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CategoryControllers.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Controllers\\CategoryControllers.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Controllers\\CategoryControllers.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryControllers.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Controllers\\CategoryControllers.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Controllers\\CategoryControllers.cs",
               "RelativeToolTip": "Controllers\\CategoryControllers.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAtwEgAAAArAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T08:17:51.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\data\\AppDbContext.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "data\\AppDbContext.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\data\\AppDbContext.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\data\\AppDbContext.cs",
               "RelativeToolTip": "data\\AppDbContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA9wBUAAAAlAAAAAAAAAA==",
+              "ViewState": "AQIAAA8AAAAAAAAAAAD4vxwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T08:12:44.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "IBlogService.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Interfaces\\IBlogService.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Interfaces\\IBlogService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IBlogService.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Interfaces\\IBlogService.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Interfaces\\IBlogService.cs",
               "RelativeToolTip": "Interfaces\\IBlogService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAASwA4AAAAQAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T06:44:42.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "PostModel.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Models\\PostModel.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Models\\PostModel.cs",
               "RelativeDocumentMoniker": "Models\\PostModel.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Models\\PostModel.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Models\\PostModel.cs",
               "RelativeToolTip": "Models\\PostModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBEAAAAUAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T05:25:32.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "BlogModel.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Models\\BlogModel.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Models\\BlogModel.cs",
               "RelativeDocumentMoniker": "Models\\BlogModel.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Models\\BlogModel.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Models\\BlogModel.cs",
               "RelativeToolTip": "Models\\BlogModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAiAAAAAAAAAA==",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T05:08:52.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "BlogService.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Services\\BlogService.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Services\\BlogService.cs",
               "RelativeDocumentMoniker": "Services\\BlogService.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Services\\BlogService.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Services\\BlogService.cs",
               "RelativeToolTip": "Services\\BlogService.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAMwEkAAAANAAAAAAAAAA==",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAcwDYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T05:16:58.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "BlogController.cs",
-              "DocumentMoniker": "D:\\My-Test-Project\\ecommerce-web-api\\Controllers\\BlogController.cs",
+              "DocumentMoniker": "F:\\ecommerce-web-api\\Controllers\\BlogController.cs",
               "RelativeDocumentMoniker": "Controllers\\BlogController.cs",
-              "ToolTip": "D:\\My-Test-Project\\ecommerce-web-api\\Controllers\\BlogController.cs",
+              "ToolTip": "F:\\ecommerce-web-api\\Controllers\\BlogController.cs",
               "RelativeToolTip": "Controllers\\BlogController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwEgAAABhAAAAAAAAAA==",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDUAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T04:38:44.301Z",
+              "WhenOpened": "2024-11-25T18:25:44.245Z",
               "EditorCaption": ""
             }
           ]

@@ -1,5 +1,6 @@
 using System;
 using Ecommerce_web_api.data;
+using Ecommerce_web_api.DTOs;
 using Ecommerce_web_api.Interfaces;
 using Ecommerce_web_api.Models;
 using Microsoft.EntityFrameworkCore;
@@ -29,7 +30,7 @@ namespace Ecommerce_web_api.Services
                                .FirstOrDefaultAsync(b => b.Id == Id);
         }
 
-        public async Task<Blog> CreateBlogService(Blog blogData)
+        public async Task<GenericResponse<Blog>> CreateBlogService(Blog blogData)
         {
             try
             {
@@ -48,12 +49,16 @@ namespace Ecommerce_web_api.Services
 
                 _appDbContext.Blogs.Add(blogData);
                 await _appDbContext.SaveChangesAsync();
-                return blogData;
+                return GenericResponse<Blog>.SuccessResponse(blogData); ;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred: {ex.Message}");
-                throw new InvalidOperationException("Failed to create the blog", ex);
+                if (ex.InnerException?.Message.Contains("duplicate key") == true)
+                {
+                    return GenericResponse<Blog>.ErrorResponse( "A record with the same ID already exists. Please use a unique ID.");
+                }
+
+                return GenericResponse<Blog>.ErrorResponse( ex.InnerException?.Message ?? "An unknown database error occurred.");
             }
         }
 

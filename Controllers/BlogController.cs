@@ -51,12 +51,14 @@ namespace Ecommerce_web_api.Controllers
         {
             var result = await _blogService.CreateBlogService(blogInfo);
 
-            if (result == null)
+            if (result.ErrorMessage != null || result.Data == null)
             {
-                return BadRequest(ApiResponse<object>.ErrorResponse(new List<string> { "Failed to create blog." }, 400, "Validation failed"));
-            }
+                var errorMessage = result.ErrorMessage ?? "An unknown error occurred.";
+                return BadRequest(ApiResponse<object>.ErrorResponse(new List<string> { errorMessage }, 402, "Validation failed"));
+            } 
+        
 
-            return CreatedAtAction(nameof(GetBlogById), new { Id = result.Id }, ApiResponse<Blog>.SuccessResponse(result, 201, "Blog created successfully"));
+            return CreatedAtAction(nameof(GetBlogById), new { Id = result.Data.Id }, ApiResponse<Blog>.SuccessResponse(result.Data, 201, "Blog created successfully"));
         }
 
 

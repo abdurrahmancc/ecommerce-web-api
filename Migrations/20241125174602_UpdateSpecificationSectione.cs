@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Ecommerce_web_api.Migrations
 {
     /// <inheritdoc />
-    public partial class initialMigration : Migration
+    public partial class UpdateSpecificationSectione : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
