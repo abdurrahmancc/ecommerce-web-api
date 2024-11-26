@@ -1,7 +1,9 @@
+using Ecommerce_web_api.Configurations;
 using Ecommerce_web_api.DTOs;
 using Ecommerce_web_api.Interfaces;
 using Ecommerce_web_api.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Writers;
 using System.Threading.Tasks;
@@ -55,8 +57,8 @@ namespace Ecommerce_web_api.Controllers
             {
                 var errorMessage = result.ErrorMessage ?? "An unknown error occurred.";
                 return BadRequest(ApiResponse<object>.ErrorResponse(new List<string> { errorMessage }, 402, "Validation failed"));
-            } 
-        
+            }
+
 
             return CreatedAtAction(nameof(GetBlogById), new { Id = result.Data.Id }, ApiResponse<Blog>.SuccessResponse(result.Data, 201, "Blog created successfully"));
         }
@@ -67,12 +69,12 @@ namespace Ecommerce_web_api.Controllers
         {
             var result = await _blogService.DeleteBlogService(id);
 
-            if(result == 404)
+            if (result == 404)
             {
-                return NotFound(ApiResponse<object>.ErrorResponse(new List<string> {$"Blog is not found in this id : {id}"}, 404, "Validation failed"));
+                return NotFound(ApiResponse<object>.ErrorResponse(new List<string> { $"Blog is not found in this id : {id}" }, 404, "Validation failed"));
             }
 
-            return Ok(ApiResponse<object>.SuccessResponse(null, 204,"Blog is deleted successfully"));
+            return Ok(ApiResponse<object>.SuccessResponse(null, 204, "Blog is deleted successfully"));
         }
 
 

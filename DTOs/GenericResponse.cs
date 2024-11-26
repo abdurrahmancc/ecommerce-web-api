@@ -26,8 +26,5 @@ namespace Ecommerce_web_api.DTOs
         {
             return new GenericResponse<R>(data, message);
         }
-    }
-
-
-    
+    } 
 }
