@@ -10,6 +10,7 @@ using dotenv.net;
 using Ecommerce_web_api.Configurations;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Ecommerce_web_api.Helper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +25,10 @@ builder.Services.AddScoped<ICategoryServices, CategoryService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<IFilesUploadService, FilesUploadService>();
+builder.Services.AddScoped<JwtService>();
 builder.Services.AddAutoMapper(typeof(Program));
+
+
 
 // Configure JWT Settings
 builder.Services.Configure<JwtSettings>(options =>
@@ -35,8 +39,8 @@ builder.Services.Configure<JwtSettings>(options =>
     options.ExpiryMinutes = _env.JWT_EXPIRY_MINUTES;
 });
 
-// Alternatively load from appsettings.json (for fallback settings)
-builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
+
 
 // Configure Database Context
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -58,10 +62,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
+            ValidIssuer = _env.JWT_ISSUER, //builder.Configuration["Jwt:Issuer"],
+            ValidAudience = _env.JWT_AUDIENCE, //builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(
-                System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                System.Text.Encoding.UTF8.GetBytes(_env.JWT_SECRET_KEY))//builder.Configuration["Jwt:Key"]
         };
     });
 
