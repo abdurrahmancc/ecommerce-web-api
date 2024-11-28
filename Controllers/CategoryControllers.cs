@@ -7,6 +7,7 @@ using Ecommerce_web_api.DTOs;
 using Ecommerce_web_api.Interfaces;
 using Ecommerce_web_api.Models;
 using Ecommerce_web_api.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ecommerce_web_api.Controllers
@@ -25,6 +26,7 @@ namespace Ecommerce_web_api.Controllers
         }
 
         //GET: /api/categories/ => Read categories
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
